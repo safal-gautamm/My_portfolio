@@ -4,9 +4,30 @@
 }
 nav{
     display: flex;
-    justify-content: space-around;
-}ul{
+    justify-content: space-between;
+    padding: 24px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 30px;
+}
+nav ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    gap: 16px;
+    align-items:  center;
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+}
+nav button{
+    border: none;
+    padding: 5px;
+    background-color: aqua;
+}
+#hero{
+    margin-top: 75px;
 }
