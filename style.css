@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary : #fe510000;
+    --secondary: #cb683b00;
+    --black: #1e1e1e;
+    --white: #fafafa;
+}
 *{
     margin: 0;
     padding: 0;
 }
+nav, section{
+    padding: 20px 30px;
+
+}
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 24px 16px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px 30px;
+    
 }
 nav ul{
     display: flex;
@@ -30,4 +41,37 @@ nav button{
 }
 #hero{
     margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.hero_img{
+    height: 40vh;
+    width: 20vw ;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px dashed black;
+}
+.hero_img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out
+}
+.hero_text  h2{
+    font-size: 32px;
+    color: var(--black)
+}
+.hero_text span{
+    color: grey;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+.hero_disc{
+    max-width:600px ;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    width: fit-content;
 }
