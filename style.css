@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root{
-    --primary : #fe510000;
-    --secondary: #cb683b00;
+    --primary : #ff500000;
+    --secondary: #71290c00;
     --black: #1e1e1e;
     --white: #fafafa;
 }
@@ -10,6 +10,24 @@
     margin: 0;
     padding: 0;
 }
+/* Typography starts */
+h1, h2, h3, h4{
+    font-family: 'Fira Sans', sans-serif;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+/* Typography starts */
+
 nav, section{
     padding: 20px 30px;
 
@@ -34,10 +52,10 @@ nav ul a{
     color: black;
     text-decoration: none;
 }
-nav button{
+.btn_primary{
     border: none;
     padding: 5px;
-    background-color: aqua;
+    background-color: var(--primary);
 }
 #hero{
     margin-top: 75px;
@@ -51,7 +69,7 @@ nav button{
     width: 20vw ;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px dashed black;
+    border: 2px solid black;
 }
 .hero_img:hover{
     transform: scale(1.1);
@@ -59,7 +77,8 @@ nav button{
 }
 .hero_text  h2{
     font-size: 32px;
-    color: var(--black)
+    color: var(--black);
+    font-family: 'Fira Sans', sans-serif;
 }
 .hero_text span{
     color: grey;
