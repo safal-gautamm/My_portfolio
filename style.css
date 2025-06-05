@@ -246,10 +246,40 @@ p.sub-title {
 section#about{
     display: flex;
     direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 #about .details{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 600px;
+}
+.about_img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.contact_imgs{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin: 10px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 0.75rem;
 }

@@ -8,14 +8,14 @@
 </head>
 <body>
   <nav>
-    <h3>Hi Devs !</h3> <!-- Missing logo title added -->
+    <h3>Hi Devs !</h3>
     <ul>
       <li><a href="#hero">Home</a></li>
-      <li><a href="#projects">Projects</a></li> <!-- '#' added for valid links -->
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="btn_primary">My CV</button> <!-- You had this already -->
+    <button class="btn_primary">My CV</button>
   </nav>
 
   <section id="hero">
@@ -28,7 +28,7 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab reiciendis minus nobis velit, tempora nostrum repudiandae id dicta beatae fugiat. Ullam, nam minus.
       </p>
     </div>
-    <img src="./pic.jpeg" class="hero_img" height="600px" width="600px" />
+    <img src="./pic.jpeg" class="hero_img" height="600px" width="600px" alt="Hero Image" />
   </section>
 
   <section id="projects">
@@ -41,18 +41,19 @@
     <div class="project-list"> 
       <div class="project-card">
         <div class="project-image">
-            <img src="./pic.jpeg" alt="" width="300px" height="300px" />
+            <img src="./pic.jpeg" alt="Project Image" width="300px" height="300px" />
         </div>
-        
         <div class="card-details">
           <h5 class="card-title">Project Name</h5>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           <a href="#">Live Demo</a>
         </div>
       </div>
+
+      <!-- The rest are similar -->
       <div class="project-card">
         <div class="project-image">
-            <img src="./pic.jpeg" alt="" width="300px" height="300px" />
+            <img src="./pic.jpeg" alt="Project Image" width="300px" height="300px" />
         </div>        
         <div class="card-details">
           <h5 class="card-title">Project Name</h5>
@@ -60,41 +61,45 @@
           <a href="#">Live Demo</a>
         </div>
       </div>
+
       <div class="project-card">
         <div class="project-image">
-            <img src="./pic.jpeg" alt="" width="300px" height="300px" />
+            <img src="./pic.jpeg" alt="Project Image" width="300px" height="300px" />
         </div>        
-         <div class="card-details">
+        <div class="card-details">
           <h5 class="card-title">Project Name</h5>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           <a href="#">Live Demo</a>
         </div>
       </div>
+
       <div class="project-card">
         <div class="project-image">
-            <img src="./pic.jpeg" alt="" width="300px" height="300px" />
+            <img src="./pic.jpeg" alt="Project Image" width="300px" height="300px" />
         </div>        
-         <div class="card-details">
+        <div class="card-details">
           <h5 class="card-title">Project Name</h5>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           <a href="#">Live Demo</a>
         </div>
       </div>
+
       <div class="project-card">
         <div class="project-image">
-            <img src="./pic.jpeg" alt="" width="300px" height="300px" />
+            <img src="./pic.jpeg" alt="Project Image" width="300px" height="300px" />
         </div>        
-         <div class="card-details">
+        <div class="card-details">
           <h5 class="card-title">Project Name</h5>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           <a href="#">Live Demo</a>
         </div>
       </div>
+
       <div class="project-card">
         <div class="project-image">
-            <img src="./pic.jpeg" alt="" width="300px" height="300px" />
+            <img src="./pic.jpeg" alt="Project Image" width="300px" height="300px" />
         </div>        
-         <div class="card-details">
+        <div class="card-details">
           <h5 class="card-title">Project Name</h5>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           <a href="#">Live Demo</a>
@@ -110,17 +115,36 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vel veritatis. Explicabo expedita eum accusamus! In tenetur quae vel, consequatur dicta facere placeat officia, cumque corrupti ipsum odio, fugiat recusandae.
       </p>
       <div class="social_links">
-        <a href="#">LinkedIn</a>
-        <a href="#">X</a> <!-- You can change to Twitter for consistency -->
-        <a href="#">Instagram</a>
+        <a href="https://www.facebook.com/gtm.safal"><img src="./icons/facebook.svg" alt="Facebook" class="contact_imgs"></a>
+        <a href="https://www.instagram.com/_safal_gtm_/"><img src="./icons/instagram.svg" alt="Instagram" class="contact_imgs"></a>
+        <a href="https://www.linkedin.com/in/gtm-safal/"><img src="./icons/linkedin.svg" alt="linkedin" class="contact_imgs"></a>
+        <a href="https://x.com/safal_gtm"><img src="./icons/twitter.svg" alt="Twitter" class="contact_imgs"></a>
+        <a href="https://github.com/gtm-safal"><img src="./icons/github.svg" alt="Github" class="contact_imgs"></a>
+        <a href="https://discord.com/users/826641958138019841"><img src="./icons/discord.svg" alt="Discord" class="contact_imgs"></a>
+
       </div>
     </div>
-    <img src="./pic.jpeg" alt="" class="about_img" height="200px" width="200px" />
-
+    <img src="./pic.jpeg" alt="About Image" class="about_img"  />
   </section>
 
   <section id="contact">
-    <!-- Still empty in both -->
-  </section>
+  <h3>Contact Me</h3>
+  <form action="" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+    <label for="message">Enter the message:</label>
+    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <script src="./script.js"></script>
+  
 </body>
 </html>
