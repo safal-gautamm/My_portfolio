@@ -2,7 +2,7 @@
 
 :root {
     --primary: #ff5000;
-    --secondary: #71290c;
+    --secondary: #cc5425;
     --black: #1e1e1e;
     --white: #fafafa;
     --accent: #262525c9;
@@ -73,12 +73,13 @@ button, .btn {
 
 .btn_primary:hover {
     background-color: var(--secondary);
-    color: var(--black);
+    color: var(--white);
     }
     /* Basic Styles End */
 
 nav, section {
         padding: 20px 30px;
+        margin-bottom: 48px;
     }
 
 nav {
@@ -239,3 +240,16 @@ p.sub-title {
     transform: scale(1.1);
     }
     /* Project Section End */
+
+    /*About section start*/
+
+section#about{
+    display: flex;
+    direction: row;
+    
+}
+#about .details{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
