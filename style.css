@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root{
-    --primary : #ff500000;
-    --secondary: #71290c00;
+    --primary : #ff5000;
+    --secondary: #71290c;
     --black: #1e1e1e;
     --white: #fafafa;
+    --accent: #262525c9;
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /* Typography starts */
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Fira Sans', sans-serif;
 }
 h1{
@@ -24,9 +26,42 @@ h3{
     font-size: 24px;
 }
 h4{
-    font-size: 20px;
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    color: var(--white);
 }
 /* Typography starts */
+
+/* Basic Styles Start */
+button,
+.btn {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn_primary:hover {
+  background-color: var(--secondary);
+  color: black;
+}
+
+/* Basic Styles End */
+
 
 nav, section{
     padding: 20px 30px;
@@ -52,21 +87,31 @@ nav ul a{
     color: black;
     text-decoration: none;
 }
-.btn_primary{
-    border: none;
-    padding: 5px;
-    background-color: var(--primary);
+nav ul li a{
+    font-weight: 800;
+    transition: 0.3s all ease-in-out;
+}
+nav ul li{
+    transition: 0.3s all ease-in-out;
+}
+nav ul li:hover{
+    color: var(--primary);
+    transform: scale(1.1);
+}
+nav ul li a:hover{
+    color: var(--primary);
 }
 #hero{
     margin-top: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 80vh;
     gap: 20px;
 }
 .hero_img{
-    height: 40vh;
-    width: 20vw ;
+    height: 400px;
+    width: 400px ;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid black;
@@ -75,22 +120,93 @@ nav ul a{
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out
 }
+.hero_text {
+  display: flex;
+  flex-direction: column;
+}
 .hero_text  h2{
-    font-size: 32px;
     color: var(--black);
-    font-family: 'Fira Sans', sans-serif;
 }
 .hero_text span{
-    color: grey;
     font-size: 20px;
-    margin: 10px 0;
+    font-weight: 500;
+    opacity: 0.8;
 
 }
 .hero_disc{
     max-width:600px ;
 }
-button{
-    padding: 10px 20px;
-    border-radius: 7px;
-    width: fit-content;
+.hero_text span,
+.hero_desc {
+  font-size: 20px;
+  margin-bottom: 15px;
 }
+/* Project Section Start */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+p.sub-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.project-card {
+  border: 2px solid var(--color-accent);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.project-image {
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  transition: 0.3s all ease-in-out;
+}
+
+.project-card .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 14px;
+}
+
+.project-card p.card-description {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: var(--accent);
+  width: fit-content;
+  padding: 3px;
+  font-family: "Fira sans", sans-serif;
+  border-radius: 2px;
+  color: var(--secondary);
+  box-shadow: 10px 0 0 inset var(--accent);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Project Section End */
