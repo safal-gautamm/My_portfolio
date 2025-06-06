@@ -1,4 +1,3 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;800&family=Nunito+Sans:wght@400;600;800&display=swap');
 
 :root {
@@ -13,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
 }
 
 html {
@@ -282,6 +280,10 @@ textarea {
   display: none;
   transition: 0.1S all ease-in-out
 }
+.hamburger:hover{
+  background-color: transparent;
+  box-shadow: 0 0 var(--black);
+}
 .hamburger:active{
   transform: rotate(90deg);
 }
@@ -292,11 +294,16 @@ textarea {
   right: 0;
   height: 100vh;
   width: 300px;
-  background-color: var(--primary);
+  background-color: var(--black);
   padding: 24px 48px;
   z-index: 1001;
   cursor: pointer;
   display: none;
+
+   transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex; /* Always keep it 'flex' for animation to work */
+  flex-direction: column;
 }
 
 .sidebar ul {
@@ -309,15 +316,14 @@ textarea {
   align-content: center;
 }
 .sidebar li{
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   height: 35px;
   padding-top: 5px;
   padding-left: 5px;
 }
 .sidebar li:hover, .sidebar a:hover{
-  background-color: var(--black);
+  background-color: var(--primary);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px inset(var(--secondary));
+  box-shadow: 0 6px 12px inset(var(--primary));
   color: var(--white);
 }
 
@@ -339,10 +345,9 @@ textarea {
   transition: 0.1s all ease-in-out;
 }
 .close-btn:hover{
-  background-color: var(--black);
+  background-color: var(--primary);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(255, 80, 0, 0.4);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.705);
+  box-shadow: 0 4px 6px #943104d0;
   transform: scale(1.1);
 }
 .close-btn:active{
@@ -403,24 +408,24 @@ textarea {
   }
   .hamburger { 
     display: block;
-    padding: 4px 10px; 
+    padding: 4px 8px; 
   }
   nav{
     justify-content:space-evenly;
-    padding-inline: 5px;
+    padding-inline: 4px;
   }
   section{
-    padding-inline: 5px;
+    padding-inline: 4px;
   }
   
   nav h3{
     margin-right: 50%;
-    font-size:20px ;
+    font-size:19px ;
   }
   input, textarea {
   font-size: 14px;
 }
 }
 .active{
-  display: flex;
+  transform: translateX(0);
 }
