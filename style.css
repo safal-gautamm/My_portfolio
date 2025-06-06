@@ -280,6 +280,10 @@ textarea {
   border: none;
   background-color: transparent;
   display: none;
+  transition: 0.1S all ease-in-out
+}
+.hamburger:active{
+  transform: rotate(90deg);
 }
 .sidebar {
   display: flex;
@@ -291,6 +295,7 @@ textarea {
   background-color: var(--primary);
   padding: 24px 48px;
   z-index: 1001;
+  cursor: pointer;
   display: none;
 }
 
@@ -299,6 +304,21 @@ textarea {
   flex-direction: column;
   gap: 20px;
   list-style: none;
+  margin-top: 100px;
+  margin-left: 20px;
+  align-content: center;
+}
+.sidebar li{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.sidebar li:hover, .sidebar a:hover{
+  background-color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px inset(var(--secondary));
+  color: var(--white);
 }
 
 .sidebar-menu {
@@ -310,7 +330,23 @@ textarea {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 20px;
+}
+.close-btn{
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.1s all ease-in-out;
+}
+.close-btn:hover{
+  background-color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 80, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.705);
+  transform: scale(1.1);
+}
+.close-btn:active{
+  transform: rotate(45deg);
 }
 
 /* Media Queries */
