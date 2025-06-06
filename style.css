@@ -420,6 +420,7 @@ textarea {
   input, textarea {
   font-size: 14px;
 }
-
 }
-
+.active{
+  display: flex;
+}
