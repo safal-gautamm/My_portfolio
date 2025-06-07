@@ -150,6 +150,9 @@ nav ul li a {
   font-size: 20px;
   margin-bottom: 15px;
 }
+.hero-disc{
+  max-width: 1150px;
+}
 
 .title {
   text-align: center;
