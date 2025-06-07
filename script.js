@@ -19,3 +19,4 @@ document.getElementById("getCV").addEventListener("click", () => {
   link.click();
   document.body.removeChild(link); // clean up!
 });
+
