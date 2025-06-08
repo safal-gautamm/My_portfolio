@@ -176,6 +176,7 @@ nav ul li a {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
+  
 }
 
 .project-card:hover img {
@@ -209,6 +210,11 @@ nav ul li a {
   color: var(--secondary);
   box-shadow: inset 10px 0 0 var(--accent);
 }
+.description{
+  height: 130px;
+  overflow: hidden;
+
+}
 
 section#about {
   display: flex;
@@ -229,6 +235,13 @@ section#about {
   width: 50px;
   margin: 10px;
   object-fit: cover;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.2s all ease-in-out;
+}
+.icons:hover{
+  transform: scale(1.3);
+  box-shadow: 3px 3px 3px 3px #5a2e1a8e;
 }
 
 section#contact form {
@@ -367,6 +380,9 @@ textarea {
     height: 300px;
     width: 300px;
   }
+  .description{
+    height: 100px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -386,6 +402,10 @@ textarea {
   .btn-primary { 
     font-size: 15px; 
     padding: 8px; 
+  }
+  .description{
+    height: 90px;
+    font-size: 15px;
   }
 }
 
@@ -416,7 +436,7 @@ textarea {
   }
   nav{
     justify-content:space-evenly;
-    padding-inline: 4px;
+    padding-inline: 6px;
   }
   section{
     padding-inline: 4px;
