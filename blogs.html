@@ -1,108 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blogs - Safal Gautam</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    #blog-list {
-  max-width: 900px;
-  margin: 3em auto;
-  padding: 0 1em;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs - Safal Gautam</title>
+    <link rel="icon" type="image/png" href="./assets/pic.png" sizes="32x32" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #blog-list {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
 
-#blog-list #title {
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 2.2rem;
-    color: #ff5000; /* your vibrant accent */
-}
+      #title {
+        margin-top: 70px;
+        text-align: center;
+        margin-bottom: 35px;
+        color: var(--primary);
+      }
 
-.blog-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.8em;
-}
+      .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 20px;
+      }
 
-.blog-card {
-  background: #262525c9; /* dark translucent */
-  border-radius: 12px;
-  padding: 1.8em 1.5em;
-  box-shadow: 0 4px 10px rgba(255, 80, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+      .blog-card {
+        background: var(--black);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(255, 80, 0, 0.25);
+        transition: transform 0.3s ease, all 0.3s ease;
+      }
 
-.blog-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(255, 80, 0, 0.5);
-}
+      .blog-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(255, 80, 0, 0.5);
+      }
 
-.blog-card h3 {
-  margin-bottom: 0.8em;
-  font-size: 1.4rem;
-}
+      #blog-title {
+        margin-bottom: 20px;
+      }
 
-.blog-card h3 a {
-  color: #ff5000;
-  text-decoration: none;
-}
+      .blog-card h3 a {
+        color: var(--primary);
+        text-decoration: none;
+      }
 
-.blog-card h3 a:hover {
-  text-decoration: underline;
-}
+      .blog-card h3 a:hover {
+        text-decoration: underline;
+      }
 
-.blog-card p {
-  color: #ddd;
-  font-size: 1rem;
-  line-height: 1.4;
-}
+      .blog-card p {
+        color: var(--white);
+      }
 
-  </style>
-</head>
-<body>
-  <nav>
-    <h3><span class="braces">{</span> SaFal <span class="braces">}.</span></h3>
-    <ul>
-      <li><a href="./index.html/#hero">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="./blogs.html">Blogs</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="btn-primary" id="getCV">My CV</button>
-    <button class="hamburger"><img src="./assets/hamburger.svg" alt="Menu Icon" class="hamburger-pic"></button>
-  </nav>
- <section id="blog-list">
-  <h2 id="title">My Blogs</h2>
-  <div class="blog-cards">
-    <div class="blog-card">
-      <h3><a href="blog1.html">Lorem ipsum dolor sit amet.</a></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse dolore officiis consequuntur accusantium fugit necessitatibus nostrum sunt amet quaerat!.</p>
+      @media (max-width: 700px) {
+        .blog-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h3>
+        <span class="braces">{</span> SaFal <span class="braces">}.</span>
+      </h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="./blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="btn-primary" id="getCV">My CV</button>
+      <button class="hamburger">
+        <img
+          src="./assets/hamburger.svg"
+          alt="Menu Icon"
+          class="hamburger-pic"
+        />
+      </button>
+    </nav>
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <img src="./assets/close.svg" alt="" class="close-btn" />
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+    <section id="blog-list">
+      <h2 id="title">My Blogs</h2>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <h3 id="blog-title">
+            <a href="./blogs/blog1.html">Lorem ipsum dolor sit amet.</a>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse
+            dolore officiis consequuntur accusantium fugit necessitatibus
+            nostrum sunt amet quaerat!.
+          </p>
+        </div>
 
-    <div class="blog-card">
-      <h3><a href="blog1.html">Lorem ipsum dolor sit amet.</a></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse dolore officiis consequuntur accusantium fugit necessitatibus nostrum sunt amet quaerat!.</p>
-    </div>
+        <div class="blog-card">
+          <h3 id="blog-title">
+            <a href="./blogs/blog1.html">Lorem ipsum dolor sit amet.</a>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse
+            dolore officiis consequuntur accusantium fugit necessitatibus
+            nostrum sunt amet quaerat!.
+          </p>
+        </div>
 
-    <div class="blog-card">
-      <h3><a href="blog1.html">Lorem ipsum dolor sit amet.</a></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse dolore officiis consequuntur accusantium fugit necessitatibus nostrum sunt amet quaerat!.</p>
-    </div>
+        <div class="blog-card">
+          <h3 id="blog-title">
+            <a href="./blogs/blog1.html">Lorem ipsum dolor sit amet.</a>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse
+            dolore officiis consequuntur accusantium fugit necessitatibus
+            nostrum sunt amet quaerat!.
+          </p>
+        </div>
 
-    <div class="blog-card">
-      <h3><a href="blog1.html">Lorem ipsum dolor sit amet.</a></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse dolore officiis consequuntur accusantium fugit necessitatibus nostrum sunt amet quaerat!.</p>
-    </div>
-    
-  </div>
-</section>
+        <div class="blog-card">
+          <h3 id="blog-title">
+            <a href="./blogs/blog1.html">Lorem ipsum dolor sit amet.</a>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem esse
+            dolore officiis consequuntur accusantium fugit necessitatibus
+            nostrum sunt amet quaerat!.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section id="footer">
+      <p>&#169; 2025 Safal Gautam. All rights reserved.</p>
+    </section>
 
-  <footer>
-    <p>&#169; 2025 Safal Gautam. All rights reserved.</p>
-  </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
