@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;800&family=Nunito+Sans:wght@400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;800&family=Nunito+Sans:wght@400;600;800&display=swap");
 
 :root {
   --primary: #ff5000;
@@ -21,21 +21,34 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: var(--black);
   color: var(--white);
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--white);
-  font-family: 'Fira Sans', 'Nuniti Sans';
+  font-family: "Fira Sans", "Nuniti Sans";
 }
 
-h1 { font-size: 36px; }
-h2 { font-size: 28px; }
-h3 { font-size: 24px; }
-h4 { font-size: 18px; }
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
 
 p {
   font-size: 16px;
@@ -76,7 +89,8 @@ button:hover {
   background-color: var(--primary);
 }
 
-nav, section {
+nav,
+section {
   padding: 20px 30px;
   margin-bottom: 48px;
 }
@@ -113,7 +127,7 @@ nav ul li a {
   font-weight: 800;
   height: 50px;
 }
-.braces{
+.braces {
   color: var(--primary);
   font-weight: 100;
 }
@@ -127,17 +141,19 @@ nav ul li a {
   gap: 20px;
 }
 
-.hero-img, .about-img {
+.hero-img,
+.about-img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--white);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease;
 }
 
-.hero-img:hover, .about-img:hover {
+.hero-img:hover,
+.about-img:hover {
   transform: scale(1.1);
 }
 
@@ -150,11 +166,12 @@ nav ul li a {
   color: var(--primary);
 }
 
-.hero-desc, .hero-text span {
+.hero-desc,
+.hero-text span {
   font-size: 20px;
   margin-bottom: 15px;
 }
-.hero-disc{
+.hero-disc {
   max-width: 700px;
 }
 
@@ -178,9 +195,8 @@ nav ul li a {
   border: 2px solid var(--accent);
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  
 }
 
 .project-card:hover img {
@@ -214,10 +230,9 @@ nav ul li a {
   color: var(--secondary);
   box-shadow: inset 10px 0 0 var(--accent);
 }
-.description{
+.description {
   height: 130px;
   overflow: hidden;
-
 }
 
 section#about {
@@ -243,7 +258,7 @@ section#about {
   border-radius: 50%;
   transition: 0.2s all ease-in-out;
 }
-.icons:hover{
+.icons:hover {
   transform: scale(1.3);
   box-shadow: 2px 2px 2px #5a2e1a8e;
 }
@@ -266,7 +281,8 @@ label {
   font-size: 18px;
 }
 
-input, textarea {
+input,
+textarea {
   border: 1px solid #ccc;
   background-color: transparent;
   outline: none;
@@ -276,7 +292,8 @@ input, textarea {
   color: var(--white);
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #aaa;
 }
 
@@ -299,13 +316,13 @@ textarea {
   border: none;
   background-color: transparent;
   display: none;
-  transition: 0.1S all ease-in-out
+  transition: 0.1s all ease-in-out;
 }
-.hamburger:hover{
+.hamburger:hover {
   background-color: transparent;
   box-shadow: 0 0 var(--black);
 }
-.hamburger:active{
+.hamburger:active {
   transform: rotate(90deg);
 }
 .sidebar {
@@ -320,10 +337,9 @@ textarea {
   z-index: 1001;
   cursor: pointer;
   display: none;
-
-   transform: translateX(100%);
+  transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
-  display: flex; /* Always keep it 'flex' for animation to work */
+  display: flex; 
   flex-direction: column;
 }
 
@@ -336,12 +352,15 @@ textarea {
   margin-left: 20px;
   align-content: center;
 }
-.sidebar li{
+.sidebar li {
   height: 35px;
   padding-top: 5px;
   padding-left: 5px;
 }
-.sidebar li:hover, .sidebar a:hover{
+.sidebar a p{
+  padding: 4px;
+}
+.sidebar a p:hover {
   background-color: var(--primary);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px inset(var(--primary));
@@ -358,103 +377,107 @@ textarea {
   top: 10px;
   right: 10px;
 }
-.close-btn{
+.close-btn {
   height: 30px;
   width: 30px;
   padding: 5px;
   border-radius: 50%;
   transition: 0.1s all ease-in-out;
 }
-.close-btn:hover{
+.close-btn:hover {
   background-color: var(--primary);
   transform: translateY(-2px);
   box-shadow: 0 4px 6px #943104d0;
   transform: scale(1.1);
 }
-.close-btn:active{
+.close-btn:active {
   transform: rotate(45deg);
 }
 
 /* Media Queries */
 @media (max-width: 1100px) {
-  nav, section {
+  nav,
+  section {
     padding-inline: 10px;
   }
-  .hero-img, .about-img {
+  .hero-img,
+  .about-img {
     height: 300px;
     width: 300px;
   }
-  .description{
+  .description {
     height: 100px;
   }
 }
 
 @media (max-width: 920px) {
   h2 {
-    font-size: 25px; 
+    font-size: 25px;
   }
-  p { 
-    font-size: 14px; 
+  p {
+    font-size: 14px;
   }
-  #hero { 
-    flex-direction: column; 
+  #hero {
+    flex-direction: column;
   }
-  .hero-img, .about-img { 
-    height: 250px; 
-    width: 250px; 
+  .hero-img,
+  .about-img {
+    height: 250px;
+    width: 250px;
   }
-  .btn-primary { 
-    font-size: 15px; 
-    padding: 8px; 
+  .btn-primary {
+    font-size: 15px;
+    padding: 8px;
   }
-  .description{
+  .description {
     height: 90px;
     font-size: 15px;
   }
 }
 
 @media (max-width: 700px) {
-  h2 { 
-    font-size: 20px; 
+  h2 {
+    font-size: 20px;
   }
-  #hero{
+  #hero {
     min-height: 50vh;
   }
-  .project-list { 
-    grid-template-columns: 1fr; 
+  .project-list {
+    grid-template-columns: 1fr;
   }
-  .hero-img, .about-img { 
-    height: 200px; 
-    width: 200px; 
+  .hero-img,
+  .about-img {
+    height: 200px;
+    width: 200px;
   }
-  .icons { 
-    height: 30px; 
-    width: 30px; 
+  .icons {
+    height: 30px;
+    width: 30px;
   }
-  nav ul { 
-    display: none; 
+  nav ul {
+    display: none;
   }
-  .hamburger { 
+  .hamburger {
     display: block;
-    padding: 4px 8px; 
+    padding: 4px 8px;
   }
-  nav{
-    justify-content:space-evenly;
+  nav {
+    justify-content: space-evenly;
     padding-inline: 6px;
   }
-  section{
+  section {
     padding-inline: 4px;
   }
-  
-  nav h3{
+
+  nav h3 {
     margin-right: 50%;
-    font-size:19px ;
+    font-size: 19px;
   }
-  input, textarea {
-  font-size: 14px;
+  input,
+  textarea {
+    font-size: 14px;
+  }
 }
-}
-.active{
+.active {
   transform: translateX(0);
 }
-
