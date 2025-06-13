@@ -1,277 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal portfolio of Safal Gautam — Computer Engineering student, tech enthusiast, and creative coder."
-    />
-    <meta
-      name="keywords"
-      content="Safal Gautam, SaFal Gautam, Gautam Safal, Safal, SaFal, Gautam, contact@safalgautam.com.np, safalgautam.com.np, portfolio, software developer, web developer, programmer, developer, frontend developer, full stack developer, computer engineering student, purbanchal campus, react developer, next.js developer, Python, C, HTML, CSS, JavaScript"
-    />
-    <title>Safal Gautam</title>
-    <link rel="icon" type="image/png" href="./assets/icon.png" sizes="32x32"/>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <h3>
-        <span class="braces">{</span> SaFal <span class="braces">}.</span>
-      </h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Personal portfolio of Safal Gautam — Computer Engineering student, tech enthusiast, and creative coder." />
+  <meta name="keywords"
+    content="Safal Gautam, SaFal Gautam, Gautam Safal, Safal, SaFal, Gautam, contact@safalgautam.com.np, safalgautam.com.np, portfolio, software developer, web developer, programmer, developer, frontend developer, full stack developer, computer engineering student, purbanchal campus, react developer, next.js developer, Python, C, HTML, CSS, JavaScript" />
+  <title>Safal Gautam</title>
+  <link rel="icon" type="image/png" href="./assets/icon.png" sizes="32x32" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <h3>
+      <span class="braces">{</span> SaFal <span class="braces">}.</span>
+    </h3>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="./blogs.html">Blogs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="btn-primary" id="getCV">My CV</button>
+    <button class="hamburger">
+      <img src="./assets/hamburger.svg" alt="Menu Icon" class="hamburger-pic" />
+    </button>
+  </nav>
+  <div class="sidebar">
+    <div class="sidebar-menu">
+      <img src="./assets/close.svg" alt="" class="close-btn" />
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="./blogs.html">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#hero">
+            <p>Home</p>
+          </a></li>
+        <li><a href="#projects">
+            <p>Projects</p>
+          </a></li>
+        <li><a href="#about">
+            <p>About</p>
+          </a></li>
+        <li><a href="./blogs.html">
+            <p>Blogs</p>
+          </a></li>
+        <li><a href="#contact">
+            <p>Contact</p>
+          </a></li>
       </ul>
-      <button class="btn-primary" id="getCV">My CV</button>
-      <button class="hamburger">
-        <img
-          src="./assets/hamburger.svg"
-          alt="Menu Icon"
-          class="hamburger-pic"
-        />
-      </button>
-    </nav>
-    <div class="sidebar">
-      <div class="sidebar-menu">
-        <img src="./assets/close.svg" alt="" class="close-btn" />
-        <ul>
-          <li><a href="#hero"><p>Home</p></a></li>
-          <li><a href="#projects"><p>Projects</p></a></li>
-          <li><a href="#about"><p>About</p></a></li>
-          <li><a href="./blogs.html"><p>Blogs</p></a></li>
-          <li><a href="#contact"><p>Contact</p></a></li>
-        </ul>
+    </div>
+  </div>
+
+  <section id="hero">
+    <div class="left">
+      <div class="hero-text">
+        <h2>Hi, I’m Safal Gautam</h2>
+        <span>Tech Enthusiast</span>
       </div>
+      <p class="hero-disc">
+        I’m passionate about exploring new technologies and dedicated to
+        learning something valuable every day. As a Computer Engineering
+        undergrad and active learner, I strive to build clean, efficient
+        solutions while constantly sharpening my skills.
+      </p>
+    </div>
+    <img src="./images/pic.jpeg" class="hero-img" alt="Hero Image" />
+  </section>
+
+  <section id="projects">
+    <div class="title">
+      <h3>My Projects</h3>
+      <p class="sub-title">
+        Projects built with passion, precision, and a learner’s mindset. These
+        showcase my hard work and relentless thirst to grind.
+      </p>
     </div>
 
-    <section id="hero">
-      <div class="left">
-        <div class="hero-text">
-          <h2>Hi, I’m Safal Gautam</h2>
-          <span>Tech Enthusiast</span>
+    <div class="project-list">
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./images/movievault.jpg" alt="MovieVault" />
         </div>
-        <p class="hero-disc">
-          I’m passionate about exploring new technologies and dedicated to
-          learning something valuable every day. As a Computer Engineering
-          undergrad and active learner, I strive to build clean, efficient
-          solutions while constantly sharpening my skills.
-        </p>
-      </div>
-      <img src="./images/pic.jpeg" class="hero-img" alt="Hero Image" />
-    </section>
-
-    <section id="projects">
-      <div class="title">
-        <h3>My Projects</h3>
-        <p class="sub-title">
-          Projects built with passion, precision, and a learner’s mindset. These
-          showcase my hard work and relentless thirst to grind.
-        </p>
-      </div>
-
-      <div class="project-list">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="./images/movievault.jpg" alt="MovieVault" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">MovieVault</h4>
-            <p class="description">
-              A CLI app to search, and explore movie details using the IMDb API.
-              Features include dynamic search, ratings and plot.
-            </p>
-            <a href="https://github.com/gtm-safal/MovieVault" target="_blank"
-              >View Repository</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="./images/quiz.png"
-              alt="Quiz"
-              style="object-fit: contain; background-color: black"
-            />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Interactive Quiz</h4>
-            <p class="description">
-              Engaging multiple-choice quiz with learning feedback and clean
-              show/hide logic. Built with JSQuery, HTML, and CSS.
-            </p>
-            <a href="https://quiz-tan-six.vercel.app/" target="_blank"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="./images/yt.png"
-              alt="YT-clone"
-              style="object-fit: contain; background-color: black"
-            />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">YouTube Clone</h4>
-            <p class="description">
-              Front-end replica of YouTube’s layout featuring a clean header,
-              sidebar navigation, and video grid. Built with semantic HTML and
-              modular CSS.
-            </p>
-            <a
-              href="https://youtube-clone-beryl-alpha.vercel.app/"
-              target="_blank"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="./images/portfolio.png"
-              alt="Portfolio"
-              style="object-fit: contain; background-color: black"
-            />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">My Portfolio</h4>
-            <p class="description">
-              My own portfolio site with responsive design, smooth animations,
-              CV download feature, and mobile-friendly navigation.
-            </p>
-            <a href="https://github.com/gtm-safal/portfolio" target="_blank"
-              >View Repository</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="./images/banking_system.jpg" alt="Banking system" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Banking System (C)</h4>
-            <p class="description">
-              A CLI banking system built in C. Features file-based storage,
-              transactions, and account management—perfect for structured
-              programming practice.
-            </p>
-            <a
-              href="https://github.com/gtm-safal/Banking_system"
-              target="_blank"
-              >View Repository</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="./images/snake game.png" alt="Snake game" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Snake Game (Python GUI)</h4>
-            <p class="description">
-              A fun and nostalgic Snake game built with Python GUI libraries
-              like Tkinter. Real-time interaction and game logic implementation.
-            </p>
-            <a href="https://github.com/gtm-safal/Snake_game" target="_blank"
-              >View Repository</a
-            >
-          </div>
+        <div class="card-details">
+          <h4 class="card-title">MovieVault</h4>
+          <p class="description">
+            A CLI app to search, and explore movie details using the IMDb API.
+            Features include dynamic search, ratings and plot.
+          </p>
+          <a href="https://github.com/gtm-safal/MovieVault" target="_blank">View Repository</a>
         </div>
       </div>
-    </section>
 
-    <section id="about">
-      <div class="details">
-        <h3>About Myself!</h3>
-        <p>
-          I’m Safal Gautam, a Computer Engineering undergrad with a strong
-          curiosity for technology and a commitment to learning every day. I
-          believe in steady, consistent effort and focusing on the fundamentals
-          to build practical solutions. I’m passionate about improving my skills
-          and approaching challenges with patience and an open mind, always
-          aiming to grow both as a developer and a person.
-        </p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/gtm.safal"
-            ><img src="./assets/facebook.svg" alt="Facebook" class="icons"
-          /></a>
-          <a href="https://www.instagram.com/_safal_gtm_/"
-            ><img src="./assets/instagram.svg" alt="Instagram" class="icons"
-          /></a>
-          <a href="https://www.linkedin.com/in/gtm-safal/"
-            ><img src="./assets/linkedin.svg" alt="linkedin" class="icons"
-          /></a>
-          <a href="https://x.com/safal_gtm"
-            ><img src="./assets/twitter.svg" alt="Twitter" class="icons"
-          /></a>
-          <a href="https://github.com/gtm-safal"
-            ><img src="./assets/github.svg" alt="Github" class="icons"
-          /></a>
-          <a href="https://discord.com/users/826641958138019841"
-            ><img src="./assets/discord.svg" alt="Discord" class="icons"
-          /></a>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./images/quiz.png" alt="Quiz" style="object-fit: contain; background-color: black" />
+        </div>
+        <div class="card-details">
+          <h4 class="card-title">Interactive Quiz</h4>
+          <p class="description">
+            Engaging multiple-choice quiz with learning feedback and clean
+            show/hide logic. Built with JSQuery, HTML, and CSS.
+          </p>
+          <a href="https://quiz-tan-six.vercel.app/" target="_blank">Live Demo</a>
         </div>
       </div>
-      <img src="./images/pic.jpeg" alt="About Image" class="about-img" />
-    </section>
 
-    <section id="contact">
-      <div class="title">
-        <h2>Contact Me</h2>
-        <p class="sub-title">
-          I’m open to new opportunities and always happy to connect.
-        </p>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./images/yt.png" alt="YT-clone" style="object-fit: contain; background-color: black" />
+        </div>
+        <div class="card-details">
+          <h4 class="card-title">YouTube Clone</h4>
+          <p class="description">
+            Front-end replica of YouTube’s layout featuring a clean header,
+            sidebar navigation, and video grid. Built with semantic HTML and
+            modular CSS.
+          </p>
+          <a href="https://youtube-clone-beryl-alpha.vercel.app/" target="_blank">Live Demo</a>
+        </div>
       </div>
-      <form action="https://formspree.io/f/xovwjvvl" method="post">
-        <div class="inputs">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./images/portfolio.png" alt="Portfolio" style="object-fit: contain; background-color: black" />
         </div>
-
-        <div class="inputs">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
+        <div class="card-details">
+          <h4 class="card-title">My Portfolio</h4>
+          <p class="description">
+            My own portfolio site with responsive design, smooth animations,
+            CV download feature, and mobile-friendly navigation.
+          </p>
+          <a href="https://github.com/gtm-safal/portfolio" target="_blank">View Repository</a>
         </div>
+      </div>
 
-        <div class="inputs">
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            rows="5"
-            placeholder="Enter your message"
-          ></textarea>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./images/banking_system.jpg" alt="Banking system" />
         </div>
+        <div class="card-details">
+          <h4 class="card-title">Banking System (C)</h4>
+          <p class="description">
+            A CLI banking system built in C. Features file-based storage,
+            transactions, and account management—perfect for structured
+            programming practice.
+          </p>
+          <a href="https://github.com/gtm-safal/Banking_system" target="_blank">View Repository</a>
+        </div>
+      </div>
 
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </section>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./images/snake game.png" alt="Snake game" />
+        </div>
+        <div class="card-details">
+          <h4 class="card-title">Snake Game (Python GUI)</h4>
+          <p class="description">
+            A fun and nostalgic Snake game built with Python GUI libraries
+            like Tkinter. Real-time interaction and game logic implementation.
+          </p>
+          <a href="https://github.com/gtm-safal/Snake_game" target="_blank">View Repository</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="footer">
-      <p>&#169; 2025 Safal Gautam. All rights reserved.</p>
-    </section>
+  <section id="about">
+    <div class="details">
+      <h3>About Myself!</h3>
+      <p>
+        I’m Safal Gautam, a Computer Engineering undergrad with a strong
+        curiosity for technology and a commitment to learning every day. I
+        believe in steady, consistent effort and focusing on the fundamentals
+        to build practical solutions. I’m passionate about improving my skills
+        and approaching challenges with patience and an open mind, always
+        aiming to grow both as a developer and a person.
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/gtm.safal"><img src="./assets/facebook.svg" alt="Facebook"
+            class="icons" /></a>
+        <a href="https://www.instagram.com/_safal_gtm_/"><img src="./assets/instagram.svg" alt="Instagram"
+            class="icons" /></a>
+        <a href="https://www.linkedin.com/in/gtm-safal/"><img src="./assets/linkedin.svg" alt="linkedin"
+            class="icons" /></a>
+        <a href="https://x.com/safal_gtm"><img src="./assets/twitter.svg" alt="Twitter" class="icons" /></a>
+        <a href="https://github.com/gtm-safal"><img src="./assets/github.svg" alt="Github" class="icons" /></a>
+        <a href="https://discord.com/users/826641958138019841"><img src="./assets/discord.svg" alt="Discord"
+            class="icons" /></a>
+      </div>
+    </div>
+    <img src="./images/pic.jpeg" alt="About Image" class="about-img" />
+  </section>
 
-    <script src="./script.js"></script>
-  </body>
+  <section id="contact">
+    <div class="title">
+      <h2>Contact Me</h2>
+      <p class="sub-title">
+        I’m open to new opportunities and always happy to connect.
+      </p>
+    </div>
+    <form action="https://formspree.io/f/xovwjvvl" method="post">
+      <div class="inputs">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div class="inputs">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="inputs">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <section id="footer">
+    <p>&#169; 2025 Safal Gautam. All rights reserved.</p>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
