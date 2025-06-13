@@ -1,158 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogs - Safal Gautam</title>
-    <link rel="icon" type="image/png" href="./assets/icon.png" sizes="32x32" />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
 
-      body {
-        display: flex;
-        flex-direction: column;
-      }
-      nav{
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs - Safal Gautam</title>
+  <link rel="icon" type="image/png" href="./assets/icon.png" sizes="32x32" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
       justify-content: space-around;
     }
-      .wrapper {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
 
-      #blog-list {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 20px;
-        flex: 1;
-      }
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-      #title {
-        margin-top: 70px;
-        text-align: center;
-        margin-bottom: 35px;
-        color: var(--primary);
-      }
+    #blog-list {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      flex: 1;
+    }
 
+    #title {
+      margin-top: 70px;
+      text-align: center;
+      margin-bottom: 35px;
+      color: var(--primary);
+    }
+
+    .blog-cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .blog-card {
+      background: var(--black);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(255, 80, 0, 0.25);
+      transition: transform 0.3s ease, all 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(255, 80, 0, 0.5);
+    }
+
+    #blog-title {
+      margin-bottom: 20px;
+    }
+
+    .blog-card h3 {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .blog-card h3:hover {
+      text-decoration: underline;
+    }
+
+    .blog-card p {
+      color: var(--white);
+    }
+
+    #footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 700px) {
       .blog-cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        margin-bottom: 20px;
+        grid-template-columns: 1fr;
       }
+    }
+  </style>
+</head>
 
-      .blog-card {
-        background: var(--black);
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 4px 10px rgba(255, 80, 0, 0.25);
-        transition: transform 0.3s ease, all 0.3s ease;
-      }
+<body>
+  <div class="wrapper">
+    <nav>
+      <h3>
+        <span class="braces">{</span> SaFal <span class="braces">}.</span>
+      </h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="./blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger">
+        <img src="./assets/hamburger.svg" alt="Menu Icon" class="hamburger-pic" />
+      </button>
+    </nav>
 
-      .blog-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 10px 20px rgba(255, 80, 0, 0.5);
-      }
-
-      #blog-title {
-        margin-bottom: 20px;
-      }
-
-      .blog-card h3 {
-        color: var(--primary);
-        text-decoration: none;
-      }
-
-      .blog-card h3:hover {
-        text-decoration: underline;
-      }
-
-      .blog-card p {
-        color: var(--white);
-      }
-
-      #footer {
-        text-align: center;
-        padding: 20px;
-        margin-top: auto;
-        margin-bottom: 10px;
-      }
-
-      @media (max-width: 700px) {
-        .blog-cards {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav>
-        <h3>
-          <span class="braces">{</span> SaFal <span class="braces">}.</span>
-        </h3>
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <img src="./assets/close.svg" alt="" class="close-btn" />
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="./blogs.html">Blogs</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="./index.html">
+              <p>Home</p>
+            </a></li>
+          <li><a href="index.html#projects">
+              <p>Projects</p>
+            </a></li>
+          <li><a href="index.html#about">
+              <p>About</p>
+            </a></li>
+          <li><a href="./blogs.html">
+              <p>Blogs</p>
+            </a></li>
+          <li><a href="index.html#contact">
+              <p>Contact</p>
+            </a></li>
         </ul>
-        <button class="hamburger">
-          <img
-            src="./assets/hamburger.svg"
-            alt="Menu Icon"
-            class="hamburger-pic"
-          />
-        </button>
-      </nav>
-
-      <div class="sidebar">
-        <div class="sidebar-menu">
-          <img src="./assets/close.svg" alt="" class="close-btn" />
-          <ul>
-            <li><a href="./index.html"><p>Home</p></a></li>
-            <li><a href="index.html#projects"><p>Projects</p></a></li>
-            <li><a href="index.html#about"><p>About</p></a></li>
-            <li><a href="./blogs.html"><p>Blogs</p></a></li>
-            <li><a href="index.html#contact"><p>Contact</p></a></li>
-          </ul>
-        </div>
       </div>
-
-      <section id="blog-list">
-        <h2 id="title">My Blogs</h2>
-        <div class="blog-cards">
-          <div class="blog-card">
-            <a href="./blogs/student-life.html">
-              <div>
-                <h3 id="blog-title">
-                  📝 Student Life in Computer Engineering in Nepal
-                </h3>
-                <p>An unknown journey.<br />An imagined destination.</p>
-                <p>
-                  Until grade 10, For me <strong>Computer Engineering</strong>
-                  was supposed to mean building cool websites, launching mobile
-                  apps, and maybe even messing with ...
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="footer">
-        <p>&#169; 2025 Safal Gautam. All rights reserved.</p>
-      </section>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <section id="blog-list">
+      <h2 id="title">My Blogs</h2>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <a href="./blogs/student-life.html">
+            <div>
+              <h3 id="blog-title">
+                📝 Student Life in Computer Engineering in Nepal
+              </h3>
+              <p>An unknown journey.<br />An imagined destination.</p>
+              <p>
+                Until grade 10, For me <strong>Computer Engineering</strong>
+                was supposed to mean building cool websites, launching mobile
+                apps, and maybe even messing with ...
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <p>&#169; 2025 Safal Gautam. All rights reserved.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
