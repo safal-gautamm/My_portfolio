@@ -1,3 +1,2 @@
 # SaFal Gautam
----
-## A portfolio of safal gautam
+## A portfolio of mine
