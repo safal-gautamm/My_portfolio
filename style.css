@@ -102,7 +102,7 @@ section {
 
 /* typography end here */
 
-/* nav bar section begin */
+/* nav section begin */
 
 nav {
   position: fixed;
@@ -137,7 +137,7 @@ nav ul li a {
   height: 50px;
 }
 
-/* nav bar section ends here */
+/* nav section ends here */
 
 /* hamburger starts */
 .hamburger-pic {
