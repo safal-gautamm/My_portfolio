@@ -155,7 +155,7 @@ nav ul li::after {
   width: 0;
   height: 2px;
   background: #cc5425;
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
 }
 
 nav ul li:hover::after {
