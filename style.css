@@ -121,6 +121,18 @@ nav {
   height: 70px;
 }
 
+nav h3 {
+  transition: 0.2s all ease-in-out;
+}
+
+nav h3 :hover {
+  color: var(--primary);
+}
+
+nav h3:hover .braces {
+  color: var(--white);
+}
+
 nav ul {
   display: flex;
   gap: 16px;
@@ -162,6 +174,11 @@ nav ul li:hover {
 nav ul li a {
   font-weight: 800;
   height: 50px;
+}
+
+.braces {
+  color: var(--primary);
+  font-weight: 100;
 }
 
 /* nav section ends here */
@@ -280,10 +297,6 @@ nav ul li a {
   gap: 20px;
 }
 
-.braces {
-  color: var(--primary);
-  font-weight: 100;
-}
 
 .hero-img,
 .about-img {
@@ -348,7 +361,7 @@ nav ul li a {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover  {
+.project-card:hover {
   transform: scale(1.05);
 }
 
@@ -521,7 +534,7 @@ textarea {
 }
 
 @media (max-width: 700px) {
-  
+
   body {
     padding-inline: 3vw;
   }
